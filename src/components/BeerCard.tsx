@@ -8,9 +8,10 @@ export const BeerCard = ({ beerData }: BeerProps) => {
   const { price, name, rating, image, id } = beerData;
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <p>{price}</p>
-    </div>
+    <tr>
+      <td>{id}</td>
+      <td>{name}</td>
+      <td>{price}</td>
+    </tr>
   );
 };

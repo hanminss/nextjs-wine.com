@@ -13,14 +13,21 @@ const AlePage: NextPage = () => {
     <div>
       <h1>{name}</h1>
       <main>
-        {data.map((beerData: Beer) => {
-          return (
-            <BeerCard
-              key={"port-wine-list-${wineData.id}"}
-              beerData={beerData}
-            />
-          );
-        })}
+        <table>
+          <tr>
+            <th>id</th>
+            <th>image</th>
+            <th>price</th>
+          </tr>
+          {data.map((beerData: Beer) => {
+            return (
+              <BeerCard
+                key={"port-wine-list-${wineData.id}"}
+                beerData={beerData}
+              />
+            );
+          })}
+        </table>
       </main>
     </div>
   );
