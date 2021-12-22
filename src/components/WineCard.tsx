@@ -5,12 +5,14 @@ interface WineProps {
 }
 
 export const WineCard = ({ wineData }: WineProps) => {
-  const { wine, winery } = wineData;
+  const { wine, winery, location, id } = wineData;
 
   return (
-    <div>
-      <h1>{wine}</h1>
-      <p>{winery}</p>
-    </div>
+    <tr>
+      <td>{id}</td>
+      <td>{wine}</td>
+      <td>{winery}</td>
+      <td>{location}</td>
+    </tr>
   );
 };

@@ -1,0 +1,29 @@
+.layout {
+  width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.article > p {
+  text-align: unset;
+}
+
+.article:hover {
+  border: 2px solid rgb(156, 52, 48);
+}
